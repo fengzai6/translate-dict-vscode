@@ -1,19 +1,21 @@
 # Code Translate for VS Code
-[![Version](https://img.shields.io/visual-studio-marketplace/v/w88975.code-translate?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=w88975.code-translate)
-![Installs](https://img.shields.io/visual-studio-marketplace/i/w88975.code-translate?style=flat-square)
-![Downloads](https://img.shields.io/visual-studio-marketplace/d/w88975.code-translate?style=flat-square)
-![Rating](https://img.shields.io/visual-studio-marketplace/r/w88975.code-translate?style=flat-square)
-![GitHub Repo stars](https://img.shields.io/github/stars/w88975/code-translate-vscode?style=flat-square&logo=github)
+
+[![Version](https://img.shields.io/visual-studio-marketplace/v/fengzai6.code-translate?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=fengzai6.code-translate)
+![Installs](https://img.shields.io/visual-studio-marketplace/i/fengzai6.code-translate?style=flat-square)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/fengzai6.code-translate?style=flat-square)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/fengzai6.code-translate?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/fengzai6/code-translate-vscode?style=flat-square&logo=github)
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
 ## 简介
 
 Code Translate 是一款纯粹的滑词翻译软件
 
-1. 无侵入式的显示翻译结果: 与VS Code代码分析完美结合 
+1. 无侵入式的显示翻译结果: 与 VS Code 代码分析完美结合
 
 2. 强大的单词拆分能力: 支持驼峰, 下划线形式等各种单词拆分
 
-3. 丰富的本地词库: 包含 340 万+离线单词, 支持各种生僻单词
+3. 丰富的本地词库: 包含 76 万+离线单词 (约 63.93 MB), 支持各种生僻单词
 
 4. 基于丰富的本地词库: Code Translate 拥有超快的查询速度, 每个单词在基本在 10ms 内可查询完毕
 
@@ -24,20 +26,21 @@ Code Translate 是一款纯粹的滑词翻译软件
 ## 预览
 
 - 鼠标悬停翻译:
-  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_01.png?raw=true)
+  ![screen_01.png](assets/Snipaste_01.png)
 - 自动拆分组合词:
-  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_02.png?raw=true)
+  ![screen_01.png](assets/Snipaste_02.png)
 - 自由框选单词:
-  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_03.png?raw=true)
+  ![screen_01.png](assets/Snipaste_03.png)
 - 跳转第三方查询
-  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_04.png?raw=true)
+  ![screen_01.png](assets/Snipaste_04.png)
 
 ---
+
 ## License
 
 MIT License
 
-Copyright (c) [2020] [w88975]
+Copyright (c) [2020] [w88975，fengzai6]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -57,6 +60,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-----
+---
 
 This project is tested with BrowserStack

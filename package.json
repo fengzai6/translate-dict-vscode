@@ -12,8 +12,12 @@
     "code-translate",
     "code translate"
   ],
-  "version": "1.0.20",
-  "publisher": "w88975",
+  "version": "1.1.0",
+  "publisher": "fengzai6",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fengzai6/code-translate-vscode.git"
+  },
   "icon": "icon.png",
   "engines": {
     "vscode": "^1.31.1"
@@ -33,6 +37,8 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "publish": "vsce package",
+    "update": "node ./scripts/update-dict.js",
+    "count": "node ./scripts/count-dict.js",
     "build:web": "webpack",
     "test:web": "npx vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ./dist/web/extension.js",
     "test": "node ./test/runTest.js"
@@ -43,6 +49,10 @@
     "@types/node": "^13.11.0",
     "@types/vscode": "^1.31.1",
     "@vscode/test-web": "^0.0.15",
+    "adm-zip": "^0.5.16",
+    "axios": "^1.13.2",
+    "cli-progress": "^3.12.0",
+    "csv-parser": "^3.2.0",
     "eslint": "^6.8.0",
     "glob": "^7.1.6",
     "mocha": "^7.1.2",
