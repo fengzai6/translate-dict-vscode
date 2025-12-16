@@ -4,6 +4,6 @@ All notable changes to the "code-translate" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [1.1.0] - 2025-12-16
 
-- Initial release
+- Change: +398,567 words

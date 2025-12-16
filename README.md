@@ -9,8 +9,6 @@
 
 ## 简介
 
-## 简介
-
 Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 
 1. 无侵入式的显示翻译结果: 与 VS Code 代码分析完美结合
