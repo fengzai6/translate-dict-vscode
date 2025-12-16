@@ -1,9 +1,9 @@
 # Translate Dict for VS Code
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/fengzai6.code-translate?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=fengzai6.code-translate)
-![Installs](https://img.shields.io/visual-studio-marketplace/i/fengzai6.code-translate?style=flat-square)
-![Downloads](https://img.shields.io/visual-studio-marketplace/d/fengzai6.code-translate?style=flat-square)
-![Rating](https://img.shields.io/visual-studio-marketplace/r/fengzai6.code-translate?style=flat-square)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/fengzai6.translate-dict?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=fengzai6.translate-dict)
+![Installs](https://img.shields.io/visual-studio-marketplace/i/fengzai6.translate-dict?style=flat-square)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/fengzai6.translate-dict?style=flat-square)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/fengzai6.translate-dict?style=flat-square)
 ![GitHub Repo stars](https://img.shields.io/github/stars/fengzai6/code-translate-vscode?style=flat-square&logo=github)
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
