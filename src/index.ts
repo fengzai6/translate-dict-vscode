@@ -45,6 +45,37 @@ export function init(): void {
       document: vscode.TextDocument,
       position: vscode.Position
     ): vscode.Hover | undefined {
+      // 获取配置
+      const config = vscode.workspace.getConfiguration("translateDict");
+      const includeFileExtensions = config.get<string[]>(
+        "includeFileExtensions",
+        []
+      );
+      const excludeFileExtensions = config.get<string[]>(
+        "excludeFileExtensions",
+        []
+      );
+
+      // 获取当前文件的扩展名（不含点号）
+      const fileName = document.fileName;
+      const lastDotIndex = fileName.lastIndexOf(".");
+      const fileExtension =
+        lastDotIndex !== -1 ? fileName.substring(lastDotIndex + 1) : "";
+
+      // 判断是否应该提供翻译
+      // 如果在排除列表中，直接返回
+      if (excludeFileExtensions.includes(fileExtension)) {
+        return;
+      }
+
+      // 如果有包含列表且当前文件扩展名不在列表中，返回
+      if (
+        includeFileExtensions.length > 0 &&
+        !includeFileExtensions.includes(fileExtension)
+      ) {
+        return;
+      }
+
       const wordRange = document.getWordRangeAtPosition(position);
       if (!wordRange) {
         return;

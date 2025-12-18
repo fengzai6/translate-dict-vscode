@@ -32,7 +32,28 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [],
+    "configuration": {
+      "title": "Translate Dict",
+      "properties": {
+        "translateDict.includeFileExtensions": {
+          "type": "array",
+          "default": [],
+          "description": "启用翻译的文件后缀列表（为空则对所有文件生效）。例如: [\"js\", \"ts\", \"py\"]",
+          "items": {
+            "type": "string"
+          }
+        },
+        "translateDict.excludeFileExtensions": {
+          "type": "array",
+          "default": [],
+          "description": "禁用翻译的文件后缀列表。例如: [\"md\", \"txt\", \"json\"]",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint . --ext .ts",
