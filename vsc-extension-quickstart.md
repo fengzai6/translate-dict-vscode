@@ -14,7 +14,7 @@ vscode 滑词 & 悬浮 翻译插件 (Translate Dict)
 
 ## Source
 
-Github: [fengzai6/code-translate-vscode](https://github.com/fengzai6/code-translate-vscode)
+Github: [fengzai6/translate-dict-vscode](https://github.com/fengzai6/translate-dict-vscode)
 
 ---
 

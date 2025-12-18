@@ -5,7 +5,7 @@
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/fengzai6.translate-dict?style=flat-square)
 ![Open VSX Downloads](https://img.shields.io/open-vsx/dt/fengzai6/translate-dict)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/fengzai6.translate-dict?style=flat-square)
-![GitHub Repo stars](https://img.shields.io/github/stars/fengzai6/code-translate-vscode?style=flat-square&logo=github)
+![GitHub Repo stars](https://img.shields.io/github/stars/fengzai6/translate-dict-vscode?style=flat-square&logo=github)
 [![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 ## 简介

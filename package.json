@@ -18,7 +18,7 @@
   "publisher": "fengzai6",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fengzai6/code-translate-vscode.git"
+    "url": "https://github.com/fengzai6/translate-dict-vscode.git"
   },
   "icon": "icon.png",
   "engines": {
