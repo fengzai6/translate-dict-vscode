@@ -21,6 +21,7 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
    - 正确处理连续大写字母（如 `HTTPServer` → `HTTP` + `Server`）
    - 自动过滤单字母前缀（如 `IUser` → `User`）
    - 多种大小写变体匹配，支持缩写形式（如 `Ht` 匹配 `Ht.`）
+   - 支持选中词组进行翻译
 
 3. 丰富的本地词库: 包含 76 万+离线单词 (约 63.93 MB), 支持各种生僻单词, 单词来源：[ECDICT](https://github.com/skywind3000/ECDICT)
 
@@ -57,7 +58,7 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 - [x] 允许 ignore 文件 或者 include 文件
 - [x] 添加全局开关快速启用/禁用翻译
 - [x] 尝试拆分类似 audioinput 这种组合词
-- [ ] 中译英
+- [ ] 中译英？
 - [ ] 自定义跳转翻译平台
 
 ## 预览
@@ -75,28 +76,6 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 
 ## License
 
-MIT License
+[MIT licensed](LICENSE)
 
-Copyright (c) [2020] [w88975，fengzai6]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
----
-
-This project is tested with BrowserStack
+based on [Code Translate](https://github.com/w88975/code-translate-vscode)
