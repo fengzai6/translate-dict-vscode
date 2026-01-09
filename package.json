@@ -14,7 +14,7 @@
     "translate-dict",
     "translate dict"
   ],
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publisher": "fengzai6",
   "repository": {
     "type": "git",
@@ -87,6 +87,13 @@
           "items": {
             "type": "string"
           }
+        },
+        "translateDict.chineseToEnglishMaxResults": {
+          "type": "number",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50,
+          "description": "中译英最大显示结果数量，默认为 10"
         }
       }
     }

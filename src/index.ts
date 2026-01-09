@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 import { MARKDOWN_FOOTER, MARKDOWN_HEADER } from "./constants";
+import { containsChinese } from "./reverseQuery";
 import { convertToMarkdown } from "./utils/convert";
 
 // 全局翻译开关状态
@@ -51,6 +52,10 @@ export function init(context?: vscode.ExtensionContext): void {
         "excludeFileExtensions",
         []
       );
+      const chineseToEnglishMaxResults = config.get<number>(
+        "chineseToEnglishMaxResults",
+        10
+      );
 
       // 获取当前文件的扩展名（不含点号）
       const fileName = document.fileName;
@@ -79,6 +84,7 @@ export function init(context?: vscode.ExtensionContext): void {
       }
 
       let word = document.getText(wordRange);
+      let isSelectWord = false;
 
       const selectText = vscode.window.activeTextEditor?.document.getText(
         vscode.window.activeTextEditor.selection
@@ -90,13 +96,25 @@ export function init(context?: vscode.ExtensionContext): void {
         (selectText.includes(word) || word.includes(selectText))
       ) {
         word = selectText;
+        isSelectWord = true;
       }
 
       const originText = word.replace(/"/g, "");
-      const wordsMarkdown = convertToMarkdown(word);
 
-      const header = MARKDOWN_HEADER.replace("$word", originText);
-      const hoverText = header + wordsMarkdown + MARKDOWN_FOOTER;
+      // 根据是否包含中文显示不同的标题
+      const isChinese = containsChinese(originText);
+
+      // 仅翻译 selected 的中文
+      if (isChinese && !isSelectWord) {
+        return;
+      }
+
+      const wordsMarkdown = convertToMarkdown(word, chineseToEnglishMaxResults);
+
+      const headerText = isChinese
+        ? `中译英 \`${originText}\` :  \n`
+        : MARKDOWN_HEADER.replace("$word", originText);
+      const hoverText = headerText + wordsMarkdown + MARKDOWN_FOOTER;
 
       return new vscode.Hover(hoverText);
     },

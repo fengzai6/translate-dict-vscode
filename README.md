@@ -33,6 +33,13 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 
 ## 功能特性
 
+### 双向翻译
+
+- **英译中**: 鼠标悬停在英文单词上，自动显示中文翻译，响应极快
+- **中译英**: 选中纯中文文本后悬停，根据匹配得分展示最佳的 10 个结果
+  - 优先显示完全匹配和独立词匹配的结果（准确率肯定没有预期那么高的 🫣）
+  - 由于需要遍历全部词库进行反向查询，中译英约需 160-200ms（仍然很快）
+
 ### 文件过滤
 
 通过配置文件类型来控制翻译功能的作用范围：
@@ -41,6 +48,10 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
   - 示例: `["js", "ts", "py"]`
 - `translateDict.excludeFileExtensions`: 禁用翻译的文件后缀列表
   - 示例: `["md", "txt", "json"]`
+
+### 中译英配置
+
+- `translateDict.chineseToEnglishMaxResults`: 中译英最大显示结果数量，默认为 10，范围 1-50
 
 ### 全局开关
 
@@ -58,7 +69,7 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
 - [x] 允许 ignore 文件 或者 include 文件
 - [x] 添加全局开关快速启用/禁用翻译
 - [x] 尝试拆分类似 audioinput 这种组合词
-- [ ] 中译英？
+- [x] 中译英（通过本地词典反向查询）
 - [ ] 自定义跳转翻译平台
 
 ## 预览
@@ -69,6 +80,8 @@ Translate Dict 是一款基于 Code Translate 的纯粹滑词翻译软件。
   ![screen_01.png](assets/Snipaste_02.png)
 - 自由框选单词:
   ![screen_01.png](assets/Snipaste_03.png)
+- 选中中文翻译:
+  ![screen_01.png](assets/Snipaste_05.png)
 - 跳转第三方查询
   ![screen_01.png](assets/Snipaste_04.png)
 

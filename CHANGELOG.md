@@ -4,6 +4,12 @@ All notable changes to the "code-translate" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.1] - 2026-01-09
+
+### 新功能
+
+- feat: 中译英功能 - 支持通过本地词典反向查询，选中中文文本即可查看对应的英文单词
+
 ## [1.2.0] - 2025-12-19
 
 ### 新功能

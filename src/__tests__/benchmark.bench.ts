@@ -1,5 +1,6 @@
 import { bench, describe } from "vitest";
 import { parseAndQuery } from "../utils/format";
+import { reverseQuery } from "../reverseQuery";
 
 describe("parseAndQuery 性能测试", () => {
   // 简单单词
@@ -88,5 +89,52 @@ describe("parseAndQuery 性能测试", () => {
   // 不存在的单词
   bench("不存在 - xyzabc", () => {
     parseAndQuery("xyzabc");
+  });
+});
+
+describe("reverseQuery 中译英性能测试", () => {
+  // 常见单字
+  bench("单字 - 人", () => {
+    reverseQuery("人", 10);
+  });
+
+  bench("单字 - 头", () => {
+    reverseQuery("头", 10);
+  });
+
+  // 常见双字词
+  bench("双字词 - 项目", () => {
+    reverseQuery("项目", 10);
+  });
+
+  bench("双字词 - 用户", () => {
+    reverseQuery("用户", 10);
+  });
+
+  bench("双字词 - 男人", () => {
+    reverseQuery("男人", 10);
+  });
+
+  // 技术词汇
+  bench("技术词汇 - 计算机", () => {
+    reverseQuery("计算机", 10);
+  });
+
+  bench("技术词汇 - 数据库", () => {
+    reverseQuery("数据库", 10);
+  });
+
+  bench("技术词汇 - 服务器", () => {
+    reverseQuery("服务器", 10);
+  });
+
+  // 较长词汇
+  bench("长词汇 - 国际化", () => {
+    reverseQuery("国际化", 10);
+  });
+
+  // 生僻词汇（可能匹配较少）
+  bench("生僻词 - 量子力学", () => {
+    reverseQuery("量子力学", 10);
   });
 });
